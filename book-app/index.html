@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StoryBook Creator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="progress"><div id="progress-bar"></div></div>
+
+    <section class="step" id="step1">
+      <h1>Welcome!</h1>
+      <p>Create your story in 5 simple steps.</p>
+      <button id="startBtn">Start</button>
+    </section>
+
+    <section class="step hidden" id="step2">
+      <h2>Select a template</h2>
+      <div class="templates">
+        <button class="template" data-template="blank">Blank</button>
+        <button class="template" data-template="adventure">Adventure</button>
+        <button class="template" data-template="fairytale">Fairytale</button>
+      </div>
+    </section>
+
+    <section class="step hidden" id="step3">
+      <h2>Write your story</h2>
+      <textarea id="storyText" placeholder="Once upon a time..."></textarea>
+      <button id="toCustomization">Next</button>
+    </section>
+
+    <section class="step hidden" id="step4">
+      <h2>Customize</h2>
+      <div class="colors">
+        <button class="color" data-color="#2563EB" style="background:#2563EB"></button>
+        <button class="color" data-color="#059669" style="background:#059669"></button>
+        <button class="color" data-color="#7C3AED" style="background:#7C3AED"></button>
+        <button class="color" data-color="#EA580C" style="background:#EA580C"></button>
+      </div>
+      <button id="toShare">Next</button>
+    </section>
+
+    <section class="step hidden" id="step5">
+      <h2>Great job!</h2>
+      <p>Your story is ready.</p>
+      <button id="createAnother">Create another</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
